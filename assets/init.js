@@ -7,15 +7,15 @@ $(document).ready( function(){
 			input.$element,
 			list.$element
 		);
-} );
 
-//Respond to 'enter' keypress
-input.on('enter', function(){
-	//Add the item
-	list.addItems([
-		new OO.ui.OptionWidget({
-			data: input.getValue(),
-			label: input.getValue()
-		})
-	]);
-});
+		//Respond to 'enter' keypress
+		input.on('enter', function(){
+			//Add the item
+			list.addItems([
+				new OO.ui.OptionWidget({
+					data: input.getValue(),
+					label: input.getValue()
+				})
+			]);
+		});
+} );
